@@ -6,6 +6,7 @@ VIAJE(patente, hora_desde, hora_hasta, origen, destino, tarifa, metraje)
 a) Listar el dni, nombre y teléfono de todos los dueños que NO son choferes.
 b) Listar la patente y el id_chofer de todos los autos a cuyos choferes les caduca la licencia el 01/01/2018.
 
+```
 a)
     A   <---    DUEÑO |X| CHOFER                // Choferes que son dueños
     B   <---    DUEÑO - A                       // Choferes que no son dueños
@@ -15,6 +16,8 @@ b)
     A   <---    σ fecha_licencia_hasta = 01/01/2018 (CHOFER)    // Choferes que caducan en esa fecha
     B   <---    AUTO |X| A                      // Autos de esos choferes
     C   <---    π patente, id_chofer (B)        // Dejo solo patente y id_chofer de esos autos
+
+```
 
 ---
 
@@ -26,6 +29,7 @@ PROFESOR(#profesor, #asignatura, nombre_prefesor, grupo)
 a) Listar el nombre de los alumnos matriculados en todas las asignaturas de segundo año.
 b) Listar el #alumno de los alumnos que no estén matriculados en BBDD.
 
+```
 a)
     A   <---    σ año = 2 (ASIGNATURA)          // Asignaturas de segundo año
     B   <---    π #asignatura (B)               // Me interesa nada mas el nro de asignatura
@@ -42,6 +46,7 @@ b)
     E   <---    ALUMNO |X| D
     F   <---    ALUMNO - E
     G   <---    π #alumno F
+```
 
 ---
 
@@ -60,6 +65,7 @@ e) Obtener los nombres de los fabricantes que sólo fabrican muebles para baño 
 f) Obtener los nombres de los fabricantes que producen muebles de cedro y roble.
 g) Obtener los nombres de los fabricantes que producen muebles de melamina o MDF.
 
+```
 a)
     A   <---    FABRICANTE |X| MUEBLE
     B   <---    π nombrefabricante, id_tipomadera A
@@ -131,6 +137,7 @@ g)
     E   <---    FABRICANTE |X| MUEBLE
     F   <---    E |X| D
     G   <---    π nombrefabricante F
+```
 
 ---
 
@@ -144,6 +151,7 @@ b) Obtener los nombres de los clientes que no han reservado un automóvil verde.
 c) Obtener los nombres de los clientes que han reservado por lo menos dos automóviles.
 d) Obtener el id de aquel cliente con el puntaje más alto.
 
+```
 a)
     A   <---    σ nombreCliente = Juan CLIENTE
     B   <---    A || RESERVA
@@ -175,6 +183,7 @@ d)
     E   <---    π nombreCliente D
     F   <---    π nombreCliente Cliente
     G   <---    F - E
+```
 
 ---
 
@@ -187,6 +196,7 @@ a) Obtener el nombre de los estudiantes con nacionalidad “Argentina” que NO 
 “LI07”
 b) Obtener el legajo de los estudiantes que se hayan anotado en TODAS las materias.
 
+```
 a)
     A   <---    σ nacionalidad = Argentina ESTUDIANTE
     B   <---    ESTUDIANTA || CARRERA
@@ -199,6 +209,7 @@ b)
     A   <---    ESTUDIANTE || INSCRIPCIONMATERIA
     B   <---    A % MATERIA
     C   <---    π nombreCompleto B
+```
 
 ---
 
