@@ -222,6 +222,7 @@ ENTREGA (#alumno, #practica, nota)
 a) Obtener #alumno y nombre de los alumnos que aprobaron con 7 o más todas las prácticas de los cursos 
 que realizaron.
 
+```
 a)
     A   <---    
     B   <---    
@@ -229,6 +230,7 @@ a)
     D   <---    
     E   <---    
     F   <---    
+```
 
 ---
 
@@ -248,6 +250,9 @@ Facultad de Informática – Universidad Nacional de La Plata
 Cátedra de Bases de Datos 1
 Cursada 2017
 
+```
+```
+
 ---
 
 8) Dados los siguientes esquemas
@@ -261,6 +266,9 @@ b) Obtener los nombres de los usuarios que han realizado aportes en todos los fo
 participa.
 c) Obtener el identificador del usuario que realizo la publicación con mayor valoración.
 
+```
+```
+
 ---
 
 9) Dados los siguientes esquemas
@@ -273,6 +281,9 @@ definición
 b) Obtener los nombres de todos los usuarios que hayan aportado alguna definición para el idioma Español
 c) Obtener el nombre de los idiomas que no tengan diccionarios posteriores al 2015
 
+```
+```
+
 ---
 
 10) Dados los siguientes esquemas
@@ -284,3 +295,6 @@ PASAJERO (id_viaje, id_usuario)
 a) Obtener fecha y hora de los viajes posteriores al 30/11 que vayan desde La Plata hacia Rosario y que no 
 tengan pasajeros registrados.
 b) Obtener el identificador del usuario que posee el auto con la capacidad más alta.
+
+```
+```
